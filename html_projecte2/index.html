@@ -1,0 +1,197 @@
+<div class="container">
+    <header class="header">
+      <link href="style.css" rel="stylesheet" type="text/css">
+      <h1 id="title" class="text-center">Formulario para el curso de ninja</h1>
+      <p id="description" class="description text-center">
+        Muchas gracias por estar interesado en nuestro curso de ninja
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Nombre</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Escribe tu nombre"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">E-mail</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Escribe tu e-mail"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Edad<span class="clue">(optional)</span></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="1"
+          max="199"
+          class="form-control"
+          placeholder="Edat"
+        />
+      </div>
+      <div class="form-group">
+        <p>¿Que habilidad ninja especial te gustaria entrenar?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Selecciona la habilidad</option>
+          <option value="student">Patadas</option>
+          <option value="job">Golpes bajos</option>
+          <option value="learner">Levitación</option>
+          <option value="preferNo">Ovio, todas</option>
+          <option value="other">Otras</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>¿Te gustaria recomendar nuestra escuela ninja a un amigo?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="definitely"
+            type="radio"
+            class="input-radio"
+            checked
+          />Definitely</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="Puede"
+            type="radio"
+            class="input-radio"
+          />Maybe</label
+        >
+  
+        <label
+          ><input
+            name="user-recommend"
+            value="No estoy seguro"
+            type="radio"
+            class="input-radio"
+          />Not sure</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>
+          ¿Qual es tu color de traje ninja favorito?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Seleciona una opción</option>
+          <option value="Verde">Verde</option>
+          <option value="Amarillo">Amarillo chillón</option>
+          <option value="Gris">Gris</option>
+          <option value="Negro">Ovbio, negro</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>
+          Con que armas te quieres equipar?
+          <span class="clue">(Marca las que quieras equiparte)</span>
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="Nunchacus"
+            type="checkbox"
+            class="input-checkbox"
+          />Nunchacus</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="Estrellas ninja"
+            type="checkbox"
+            class="input-checkbox"
+          />Estrellas ninja</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Espada"
+            type="checkbox"
+            class="input-checkbox"
+          />Espada</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Lanza"
+            type="checkbox"
+            class="input-checkbox"
+          />Lanza</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Puñales"
+            type="checkbox"
+            class="input-checkbox"
+          />Puñales</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Bombas de humo"
+            type="checkbox"
+            class="input-checkbox"
+          />Bombas de humo</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Hachas"
+            type="checkbox"
+            class="input-checkbox"
+          />Hachas</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Martillo"
+            type="checkbox"
+            class="input-checkbox"
+          />Martillo</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Armas adicionales"
+            type="checkbox"
+            class="input-checkbox"
+          />Armas adicionales</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>¿Alguna pregunta o sugerencia?</p>
+        <textarea
+          id="Preguntas"
+          class="input-textarea"
+          name="comment"
+          placeholder="Escribe tu nombrre aqui..."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
