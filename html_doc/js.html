@@ -1,0 +1,144 @@
+<!doctype html>
+
+<html>
+				<head>
+						<title>JavaScript</title>
+						<meta charset="UTF-8">
+						<center><h1>JAVASCRIPT </h1></center>
+							<link rel="stylesheet"
+								href="style.css">
+
+				</head>
+<body>
+								<h3 align=center> <strong>Javascript desde cero</strong></h3>
+								<ol>
+									<li> <a href="#Conceptes">Conceptes de algoritme i programació</a> </li>
+									<li> <a href="#Javascript">Que es Javascript?</a></li>
+									<li> <a href="#Variables">Variables</a></li>
+									<li> <a href="#EntTec">Entrada per teclat</a></li>
+									<li> <a href="#Essecpro">Estructures secuencials i condicionals de programació</a></li>
+									<li> <a href="#OpLog">Operadors lògics</a></li>
+									<li> <a href="#Canvas">Canvas</a></li>
+
+
+                				</ol>
+    <hr/>
+
+                                <h3 alig=center> <u> <a name="Conceptes">Conceptes de algoritme i programació</a></u></h3>
+                        <p>Algoritme son els passos a seguir per resoldre un problema.</p>
+                        <p>Programa es un conjunt de intruccions que enten el ordinador per a realitzar una activitat</p>
+                        <p>Llenguatge de programació son el conjunt de instruccions que son interpretades per la computadora per a realitzar operacions</p>
+                <hr/>
+
+                                <h3 alig=center> <u> <a name="Javascript">Que es Javascript?</a></u></h3>
+                        <p>És un llenguatge de seqüència que et permet crear contingut d'actualització dinàmica, controlar multimèdia, animar imatges i pràcticament tota la resta. (Està bé, no tot, però és sorprenent el que pots aconseguir amb unes poques línies de codi JavaScript).
+						</p>
+						<p>No es pot executar fora de un navegador</p>
+						<br>
+						<p>El programa amb JavaScript a de anar entre la marca script i inicialitzada la propietat type amb la cadena text/javascript.</p>
+						<p>Es sensible a majuscules i minuscules</p>
+						<p>El més básic seria:</p>
+						<xmp>
+							<html>
+								<head>
+								</head>
+								<body>
+									<script type="text/javascript">
+									document.write("Hola mon");
+									</script>
+								</body>
+							</html>
+						</xmp>
+
+                <hr/>
+				<h3 alig=center> <u> <a name="Variables">Variables</a></u></h3>
+				<p> Les més bàsiques son:</p>
+				<ul>
+					<li>Valors sencers (199, 234, etc)</li>
+					<li>Valors reals (1.23, 2,50 etc)</li>
+					<li>Cadenes de caracters ("Juan","Compres","llistat", etc)</li>
+					<li>Valors lògics (true,false)</li>
+
+				</ul>
+				<hr/>
+				<h3 alig=center> <u> <a name="EntTec">Entrada per el teclat</a></u></h3>
+				<p>Un exemple seria:> </p><br>
+				<xmp>
+					<html>
+						<head>
+						</head>
+						<body>
+							<script type="text/javascript">
+							var nom;
+							var edat;
+							nom=prompt("ingresi el seu nom:");
+							edat=prompt("ingresi la seva edat");
+							document.write("Hola");
+							document.write(nom);
+							document.write("tens");
+							document.write(edat);
+							document.write("anys.");
+							</script>
+						</body>
+					</html>
+				</xmp>
+				<hr/>
+				<h3 alig=center> <u> <a name="EssecPro">Estructures secuencials i condicionals de programació</a></u></h3>
+				<p>Per a que JS agafi el continguts de les variables com a enters i no com a cadenes de caracters em de utiñitzar la funció parseInt, per exemple:</p><br>
+				<xmp>
+					var suma=parseInt(valor1)+parseInt(valor2);
+					var producto=parseInt(valor1)*parseInt(valor2);
+
+				</xmp>
+				<h4 alig=center> Condicional simple</h4>
+				<xmp>
+					if (nota>=4)
+					{
+						document.write(nom+"esta aprobat amb una nota de "+nota);
+					}
+				</xmp>
+				<h4 alig=center> Condicional compost</h4>
+				<p>Tindria la segúent estructura:</p> <br>
+
+				<xmp>
+					if(<condició>)
+						{
+							<instrucio(ns)>
+						}
+					else
+						{
+							<instrucio(ns)>
+						}	
+				</xmp>
+				<h4 alig=center> Condicional anidat</h4>
+				<p>Seria:</p>
+				<xmp>
+					if (pro>=7)
+					{
+						document.write("promocionat");
+					}
+					else
+					{
+						if(pro>=4)
+						{
+							document.write("regular");
+						}
+						else{
+							document.write("Suspes");
+						}
+					}
+				</xmp>
+	<hr/>
+		<h3 alig=center> <u> <a name="OpLog">Operadors lògics</a></u></h3>
+		<p>Son: && que vol dir i (a && b),  || que vol dir o (a || b) i ! que vol dir no ( !a )<</p> <br>
+		<p> exemples de programació amb operadors lògics :</p> <br>
+	<hr/>
+		<h3 alig=center> <u> <a name="Canvas">Operadors lògics</a></u></h3>
+						<p> Tutorial de canvas, per a fer dibuixos amb js:</p>
+						<a href="https://developer.mozilla.org/es/docs/Web/API/Canvas_API/Tutorial">Tutorial de Canvas</a>
+						
+
+
+</body>
+</html>
+

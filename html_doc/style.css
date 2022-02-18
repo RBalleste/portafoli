@@ -1,0 +1,213 @@
+html {
+  background-color: #eaf1f7;
+}
+/*Dar estilo al cuerpo del documento
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #FF9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+Copy to Clipboard
+Ahora tienes varias declaraciones en el elemento body. Revisa una por una:
+
+width: 600px; — esto hará que el cuerpo siempre tenga 600 píxeles de ancho.
+margin: 0 auto; — cuando seleccionas dos valores dentro de propiedades como margin o padding, el primer valor afectará los lados superior (top) e inferior (bottom) (en este caso haciéndolo en 0), y el segundo valor los lados izquierdo (left) y derecho (right) (aquí, auto es un valor especial que divide el espacio disponible entre derecha e izquierda). Puedes usar esta propiedad con uno, dos, tres o cuatro valores como se explica en la sintaxis de padding.
+background-color: #FF9500; — como antes, este selecciona el color de fondo de un elemento. Se ha usado un naranja rojizo para el elemento body en contraste con el azul oscuro del elemento <html>. Sigue y experimenta. Siéntete libre de usar white o cualquiera que sea de tu agrado.
+padding: 0 20px 20px 20px; — tienes 4 valores puestos en el relleno, para dar un poco de espacio alrededor del contenido. Esta vez no pondrás relleno en la parte de arriba de body, 20 píxeles a la izquierda, abajo y derecha. Los valores se ponen: arriba, derecha, abajo e izquierda, en ese orden. Como con margin usar esta propiedad con uno, dos, tres o cuatro valores como se explica en la sintaxis de padding.
+border: 5px solid black; — este simplemente pone un borde de 5 píxeles de ancho, continuo y de color negro alrededor del elemento body.*/
+body {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #ffffff;
+  font-family: 'Open Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Ahora, para personalizar a tu gusto y acorde al estilo de tu web estos títulos, modifica las propiedades de cada uno de ellos:
+
+color: añade aquí el color en el que desees que se muestre cada título H1, H2, H3, H4, H5 y H6.
+font-weight: define si quieres que este título se muestre en negrita (bold), normal (normal)…
+font-size: indica el tamaño en píxeles en el que quieres mostrar cada título.
+font-family: indica la fuente para cada encabezado (Arial, Helvetica, Sans-serif…)
+text-transform: establece si quieres mostrar cada encabezado en letras minúsculas (lowercase) o en letras mayúsculas (uppercase). */
+h1 {
+  color: #6c2eb9;
+  text-align: center;
+  font-weight: normal;
+  font-size: 40px;
+  font-family: Arial;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 1px black;
+}
+H1.h1exemple {
+  text-align: left
+}
+h2 {
+  color: #3c1b66;
+  font-weight: normal;
+  font-size: 35px;
+  font-family: Arial;
+  text-transform: uppercase;
+}
+h3 {
+  color: #443963;
+  font-weight: normal;
+  font-size: 30px;
+  font-family: Arial;
+
+}
+h4 {
+  color: #4f4866;
+  font-weight: normal;
+  font-size: 25px;
+  font-family: Arial;
+  text-transform: lowercase;
+}
+h5 {
+  color: #656172;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: Arial;
+  text-transform: lowercase;
+}
+h6 {
+  color: #747377;
+  font-weight: normal;
+  font-size: 18px;
+  font-family: Arial;
+  text-transform: lowercase;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#navbar {
+  color: #6c2eb9;
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+}
+
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: thin;
+}
+
+#main-doc header {
+  text-align: left;
+  margin: 0px;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  color: #6c2eb9;
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #4d4e53;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+section article {
+  color: #4d4e53;
+  margin: 15px;
+  font-size: 0.96em;
+}
+
+section li {
+  margin: 15px 0px 0px 20px;
+}
+
+code {
+  display: block;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="favicon-cdlibre-32-16.ico" type="image/x-icon">
+    <title>HTML Documentación</title>
+</head>
+
+<body>
+<nav id="navbar">
+    <header>HTML Documentación     
+    </header>
+    <ul>
+      <li><a class="nav-link" href="#Introducción">Introducción</a></li>
+      
+      <li>
+        <a class="nav-link" href="#Instruccions_bàsiques"
+          >Instruccions bàsiques: salt de linea, Paràgraf, tituls i Enfasis...</a
+        >
+      </li>
+      <li>
+        <a class="nav-link" href="#Llistes">Llistes</a>
+      </li>
+      <li><a class="nav-link" href="#Enllaços">Enllaços</a></li>
+      <li><a class="nav-link" href="#styleialign">Style i align, exemples</a></li>
+      <li>
+        <a class="nav-link" href="#Frames">Frames</a>
+      </li>
+      <li><a class="nav-link" href="#Marges">Marges</a></li>
+      <li><a class="nav-link" href="#Padding">Padding</a></li>
+      <li><a class="nav-link" href="#Borders">Borders</a></li>
+      <li><a class="nav-link" href="#AuVid">Integració audio, video barra de progrès</a></li>
+      <li><a class="nav-link" href="#Form">Formularis en html</a></li>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="Introducción">
+      <h1>HTML Documentación  </h1>
+      <img src="Imatges/html.png" alt="HTML logo">
+      <hr/>
+      <header>Introducción</header>
+      <article>
+        <p>
+            HTML és el llenguatge que s'utilitza per al desenvolupament de pàgines d'internet.
+            Esta constituit per elements que els navegador interpreten.
+            Hi han elements per ficar imatges sobre una pàgina, hipervincles, llistes, taules...
+            Per a poder creas una pàgina de HTML sols es necesari un editor de text i un navegador.
+        </p>
+        <p>
+            Estructura interna de HTML
+            Les instruccions estan tancades per els caracters &lt;i &gt;
+        </p>
+        <p>            
+            L'estuctura bàsica d'una pàgina HTML es:
+        <code>
+				  <xmp>
+				  <html>
+			  	<head>
+			  		<title></title>
+			  	</head>
+			  	<body>
+			  	Cos de la pàgina 
+			  	</body>
+			  	</html>
+			  	</xmp>
+        </code>
+        </p>
+      <hr/>
+      </article>
+    </section>
+    <section class="main-section" id="Instruccions_bàsiques">
+      <header>Instruccions bàsiques: salt de linea, Paràgraf, tituls i Enfasis...</header>
+      <article>
+            El salt de linea es fa amb  <xmp><br></xmp>     
+			      El que es vol ficar com a Paràgraf amb  <xmp> <p> </p>.</xmp> Els següents cassos igual canviant la p per les altres instruccions.<br>
+			      Exemple de small <small>small</small> <br> 
+			      Exemple de em<em> cursiva em</em> <br> 
+			      Exemple de sup <sup>sup</sup> <br> 
+            Exemple de sub<sub>sub</sub> <br>
+            Exemple de b <b> Exemple de negreta</b> <br> 
+            Exemple de i <i> Exemple de cursiva</i> <br> 
+            Exemple de u <u> Exemple de subrallat </u> <br>
+			      <strike> Exemple de la funció strike </strike><br>
+            <del>Exemple de tatxat del</del> 
+			      <p style="background-color:Tomato;"> Exemple de background-color</p>
+			      <h5>Etiqueta pre, per preservar la literalitat</h5> 
+			      <pre> 
+				         ¯\_(ツ)_/¯ 
+			      </pre> 
+			      <!-- Preserve Formatting is used to print the same text as written in HTML code --> 
+ 			      <!-- Tinc que trencar la section pq em mostri el h1 amb la mida correcta --> 
+			      <b>Exemples de diferents mides de tituls (modificat amb css):</b><br></article></section>
+              <h1 class="h1exemple"> mida h1</h1><section>
+				      <h2> mida h2</h2>
+				      <h3> mida h3</h3>
+				      <h4> mida h4</h4>
+				      <h5> mida h5</h5> 
+				      <h6> mida h6</h6>
+              <hr/>
+        </article>
+      </section>
+    <section class="main-section" id="Llistes">
+      <header>Llistes</header>
+      <article>
+        <p>
+          Exemple de llista desordenada i subllista ordenada, amb ul, ol i amb li</p>
+          <code>
+            <p>
+            	&lt;ul&gt; 
+              &lt;li&gt; Exemple 1&lt;/li&gt;
+              &lt;li&gt; Exemple 2&lt;/li&gt;
+              &lt;ol&gt; 
+              &lt;li&gt; Subllista 1&lt;/li&gt;
+              &lt;li&gt; Subllista 2&lt;/li&gt;
+              &lt;/ol&gt;
+              &lt;li&gt; Exemple 3&lt;/li&gt;
+              &lt;/ul&gt; &lt;br&gt;
+            </p>
+          </code> 
+          <br>
+					<ul> 
+						<li> Exemple 1</li>
+						<li> Exemple 2</li>
+						<ol> 
+							<li> Subllista 1</li>
+							<li> Subllista 2</li>
+						</ol>
+							<li> Exemple 3</li>
+					</ul> <br>
+        </p>
+  
+        <p>
+          El elemento ul define una lista desordenada. <br> 
+          El elemento contiene uno o más elementos li que especifican los ítems de la lista. <br>
+          Por el contrario, el elemento ol define una lista ordenada. <br>
+          El elemento contiene uno o más elementos li que especifican los ítems de la lista como una secuencia ordenada.
+        </p>
+
+      </article>
+      <hr/>
+    </section>
+    
+    <section class="main-section" id="Enllaços">
+      <header>Enllaços</header>
+      <article>
+        <p>	Exemples de enllaços a pagines externes i ancles:
+          <br> Es fa ficant:
+          <code>
+            &lt;a href=&quot;https://www.google.com&quot;&gt; Exemple de dresera al buscador de google&lt;/a&gt;
+            &lt;a href=&quot;mailto:rballeste69@gmail.com&quot;&gt; Enviar mail a Ramon Ballest&#233;&lt;/a&gt;
+            &lt;a href=&quot;css.html&quot;&gt; Exemple de dresera a un altra p&#224;gina del mateixa web del css&lt;/a&gt;
+            &lt;img src=&quot;Imatges/gatomalo.jpg&quot; alt=&quot;Jaimito, obvio&quot;&gt; 
+            &lt;a href=&quot;html.html#FinalPrincipal&quot;&gt;Anar al final de la p&#224;gina (tamb&#233; es `pot fer desde altes p&#224;gines de la mateixa web)&lt;/a&gt;
+            &lt;a href=&quot;pagina2.html&quot;&gt; &lt;img src=&quot;../imagenes/foto1.jpg&quot; alt=&quot;Pintura Geometrica&quot;&gt; &lt;/a&gt; /** anar a un altra pagina fent click a la imatge **/
+          </code>
+        </p>
+    
+    <P>Sense el xmp seria:<br>
+      <a href="https://www.google.com"> Exemple de dresera al buscador de google</a> <br> <br>
+      <a href="mailto:rballeste69@gmail.com"> Enviar mail a Ramon Ballesté</a> <br> <br>
+      <a href="css.html"> Exemple de dresera a un altra pàgina del mateixa web del css</a> <br>
+      <img draggable="true" src="Imatges/Jaime&Grisset.jpg" alt="Jaime & Varis" wight=200px height=200px> <br> 
+      <a href="html.html#FinalPrincipal">Anar al final de la pàgina (també es `pot fer desde altes pàgines de la mateixa web)</a><br>
+      <a href="css.html"> <img src="Imatges/cake.png" alt="Pintura Geometrica"wight=200px height=200px> </a> /** anar a un altra pagina fent click a la imatge **/
+    </p>
+    <a href="https://www.weather.com"> El temps</a> <br> <br>
+    <p>&real; Un enlace a mi sitio web favorito.<a href="https://www.portaldeextranjeria.com" target="_blank" title="Portal de Extranjeria">Portal de extranjeria</a>
+    </p>
+    </article>
+    </section>
+    <hr/>
+    <section class="main-section" id="styleialign">
+      <header>Style i align, exemples</header>
+        <code>
+          <p>
+            &lt;h3 style=&quot;color: green;&quot;&gt; Exemple de canvi de color per style&lt;/h3&gt;
+            &lt;h3 style=&quot;background-color:darkgreen;&quot;&gt; Exemple de canvi de color de fons per style&lt;/h3&gt; 
+            &lt;h3 style=&quot;color: crimson;&quot;&gt; Ficar el color crimson&lt;/h3&gt;
+            &lt;p style=&quot;font-size: 40px;&quot;&gt; Par&#224;graf escrit amb mida de 40 p&#237;xels per style&lt;/p&gt; 
+            &lt;p style=&quot;font-style: italic; font-weight: bold;&quot;&gt;Par&#224;graf escrit amb italic i Font weight: bold.&lt;/p&gt; &lt;br&gt;
+            &lt;p align=left&gt; Exemple centrament esquerra &lt;/p&gt; 
+            &lt;p align=center&gt; Exemple centrament al centre &lt;/p&gt;  
+            &lt;p align=right&gt; Exemple centrament dreta &lt;/p&gt; 
+          </p>
+        </code>
+          
+					<h3 style="color: green;"> Exemple de canvi de color per style</h3>
+					<h3 style="background-color:darkgreen;"> Exemple de canvi de color de fons per style</h3> 
+					<h3 style="color: crimson;"> Ficar el color crimson</h3>
+					<p style="font-size: 40px;"> Paràgraf escrit amb mida de 40 píxels per style</p> 
+					<p style="font-style: italic; font-weight: bold;">Paràgraf escrit amb italic i Font weight: bold.</p> <br>
+					<p align=left> Exemple centrament esquerra </p> 
+					<p align=center> Exemple centrament al centre </p>  
+					<p align=right> Exemple centrament dreta </p> 
+
+					<p align=justify> Exemple de text justificat </p><br>
+					<p>Aquesta práctica esta desaprovada, es mes aconsellable ficar-ho amb Css, de aquesta forma:</p>
+					<br>
+					<xmp>
+						<HEAD>
+							<TITLE>Cómo Tallar la Madera</TITLE>
+							<STYLE type="text/css">
+							 H1.madera {text-align: center}
+							</STYLE>
+						   <BODY>
+							<H1 class="madera"> Cómo Tallar la Madera </H1>
+					</xmp>
+		<hr/>
+			<h3 align=center> <u> <a name="Frames">Frames</a></u></h3>	
+
+					<p> Esta explicat aqui:</p>
+
+					<a href="https://informaticapc.com/tutorial-html/frames.php"> Frames</a>
+					<br> 
+          <hr/>
+                    <h3 align=center> <u> <a name="Marges">Marges</a></u></h3><br>
+					<p>Aqui hi ha una bona explicació</p><br>
+					<a href="https://developer.mozilla.org/es/docs/Web/CSS/margin"> Marges</a>
+					<p>Exemples de marges</p> <br>
+    </section>
+    <hr/>
+    <section>
+            <h3 align=center> <u> <a name="Padding">Padding</a></u></h3>
+                    <p> Esta explicat aqui:</p>
+                    <a href="https://developer.mozilla.org/es/docs/Web/CSS/padding">Padding</a>
+                    <!-- També es pot fer així per exemple: padding:20px 20px 20px 20 px; ordre a dalt dreta baix esquerra --> 
+                    <p> El padding afegeix espai entre el contingut i el borde, mentre que margin afegeix espai entre el borde i els altres elements</p> <br>
+    </section>
+    <hr/>
+    <section><h3 align=center> <u> <a name="Bordes">Bordes</a></u></h3>
+                    <p> Arrodonir les cantonades. L'ordre es border-radius i el ordre per redondear
+                        les cantonades dels bordes comença amb dalt esquerra i segueix amb el sentit de les agulles del rellotge.</p>
+                        <a href="<a href=https://developer.mozilla.org/es/docs/Web/CSS/padding">Padding</a>">Borders</a>    
+                  
+    </section>
+    <hr/>
+    <section><h3 align=center> <u> <a name="AuVid">Integració audio, video barra de progrès</a></u></h3>
+        <p>Exemple de reproducció de audio de mp3:</p><br>
+        <audio align=center src="Sons/prova1mp3.mp3" controls> Element audio no soportat per el seu navegador</audio><br>
+        <p>Exemple de reproducció de video mp4:</p><br>
+        <video class="center" controls autoplay loops height=200px midth=100px>
+        <source src="Videos/samplevideo_1280x720_1mb.mp4" > Element de video no soportat al seu navegador
+        </video> <br>
+        <p>Exemple de una barra de progrès mes ven feta amb css i js : </p> <br>
+          <style>
+            #myProgress {
+              width: 100%;
+              background-color: #ddd;
+            }
+            
+            #myBar {
+              width: 1%;
+              height: 30px;
+              background-color: #04AA6D;
+            }
+          </style>
+          <h3>JavaScript Progress Bar</h3>
+          <div id="myProgress">
+            <div id="myBar"></div>
+          </div>
+          <br>
+          <button onclick="move()">Click Me</button> 
+          <script>
+          var i = 0;
+          function move() {
+            if (i == 0) {
+              i = 1;
+              var elem = document.getElementById("myBar");
+              var width = 1;
+              var id = setInterval(frame, 10);
+              function frame() {
+                if (width >= 100) {
+                  clearInterval(id);
+                  i = 0;
+                } else {
+                  width++;
+                  elem.style.width = width + "%";
+                }
+              }
+            }
+          }
+          </script>
+    </section>
+
+    <hr/>
+    <h3 align=center> <u> <a name="Form">Formularis en html</a></u></h3>	
+
+    <p> Esta explicat aqui:</p>
+
+    <a href="https://developer.mozilla.org/es/docs/Learn/Forms/Your_first_form"> Formularis amb html</a>
+    <br> 
+      <script src="scripts/main.js"></script> <br>
+      <hr/>
+    </body>
+    </html>
