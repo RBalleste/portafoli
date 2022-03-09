@@ -1,38 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Documentación</title>
+</head>
+<body>
 <nav id="navbar">
-    <header>JS Documentación
-      <link href="style.css" rel="stylesheet" type="text/css">
-    </header>
-    <ul>
+  <header>JS Documentación
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </header>
+  <ul>
       <li><a class="nav-link" href="#Introducción">Introducción</a></li>
-      <li>
-        <a class="nav-link" href="#Que_es_lo_que_ya_deberias_saber"
-          >Que es lo que ya deberias saber</a
-        >
-      </li>
-      <li>
-        <a class="nav-link" href="#JavaScript_y_Java">JavaScript y Java</a>
-      </li>
+      <li><a class="nav-link" href="#Que_es_lo_que_ya_deberias_saber">Que es lo que ya deberias saber</a></li>
+      <li><a class="nav-link" href="#JavaScript_y_Java">JavaScript y Java</a></li>
       <li><a class="nav-link" href="#Hola_mundo">Hola mundo</a></li>
       <li><a class="nav-link" href="#Variables">Variables</a></li>
-      <li>
-        <a class="nav-link" href="#Declaración_de_variables">Declaración de variables</a>
-      </li>
+      <li><a class="nav-link" href="#Declaración_de_variables">Declaración de variables</a></li>
       <li><a class="nav-link" href="#Ámbito_de_las_variables">Ámbito de las variables</a></li>
       <li><a class="nav-link" href="#Variables_globales">Variables globales</a></li>
       <li><a class="nav-link" href="#Constantes">Constantes</a></li>
       <li><a class="nav-link" href="#Tipos_de_datos">Tipos de datos</a></li>
-      <li>
-        <a class="nav-link" href="#Declaración_if...else">Declaración if...else</a>
-      </li>
+      <li><a class="nav-link" href="#Declaración_if...else">Declaración if...else</a></li>
       <li><a class="nav-link" href="#Declaración_while">Declaración while</a></li>
-      <li>
-        <a class="nav-link" href="#DeclaraciÓn_de_funciones"
-          >Declaración de funciones</a
-        >
-      </li>
+      <li><a class="nav-link" href="#Declaración_switch">Declaración switch</a></li>
+      <li><a class="nav-link" href="#Arrays">Arrays</a></li>
+      <li><a class="nav-link" href="#DeclaraciÓn_de_funciones">Declaración de funciones</a></li>
       <li><a class="nav-link" href="#Referencias">Referencias</a></li>
-    </ul>
-  </nav>
+  </ul>
+</nav>
   <main id="main-doc">
     <section class="main-section" id="Introducción">
       <header>Introducción</header>
@@ -43,7 +40,6 @@
             ejemplo, un navegador web), JavaScript se puede conectar a los objetos de
             su entorno para proporcionar control programático sobre ellos.
         </p>
-  
         <p>
             JavaScript contiene una biblioteca estándar de objetos, como Array, Date,
             y Matemáticas, y un conjunto básico de elementos de lenguaje como operadores, control
@@ -73,7 +69,6 @@
       <header>Que es lo que ya deberias saber</header>
       <article>
         <p>Esta guía asume que usted tiene los siguientes antecedentes básicos:</p>
-  
         <ul>
           <li>
             Una comprensión general de Internet y la World Wide Web (WWW).
@@ -81,8 +76,7 @@
           <li>
             Buen conocimiento práctico del lenguaje de marcado de hipertexto (HTML).</li>
           <li>
-            Algo de experiencia en programación. Si eres nuevo en la programación, prueba uno de
-            los tutoriales enlazados en la página principal sobre JavaScript.
+            Algo de experiencia en programación.
           </li>
         </ul>
       </article>
@@ -93,8 +87,8 @@
         <p>
             JavaScript y Java son similares en algunos aspectos pero fundamentalmente diferentes
           en algunos otros. El lenguaje JavaScript se parece a Java pero no tiene
-          El tipado estático de Java y la verificación de tipo fuerte. JavaScript sigue la mayoría
-          Sintaxis de expresiones Java, convenciones de nomenclatura y flujo de control básico
+          el tipado estático de Java y la verificación de tipo fuerte. JavaScript sigue la mayoría de la
+          sintaxis de expresiones Java, convenciones de nomenclatura y flujo de control básico
           construcciones que fue la razón por la que se cambió el nombre de LiveScript a
           JavaScript.
         </p>
@@ -106,8 +100,8 @@
             JavaScript tiene un modelo de objetos basado en prototipos en lugar del más común
             modelo de objetos basado en clases. El modelo basado en prototipos proporciona dinámica
             herencia; es decir, lo que se hereda puede variar para objetos individuales.
-            JavaScript también admite funciones sin ningún declarativo especial
-            requisitos Las funciones pueden ser propiedades de los objetos, ejecutándose como
+            JavaScript también admite funciones sin ningún declarativo especial de
+            requisitos. Las funciones pueden ser propiedades de los objetos, ejecutándose como
             métodos vagamente escritos.
         </p>
         <p>
@@ -165,7 +159,7 @@
            advertencia. No deberías usar esta variante. 
         </p>
         <p>
-            Con la palabra clave let. Por ejemplo, <code> sea y = 13.</code> Esta sintaxis
+            Con la palabra clave let. Por ejemplo, <code> set y = 13.</code> Esta sintaxis
            se puede utilizar para declarar una variable local de ámbito de bloque. Ver Ámbito de variable
            debajo. 
         </p>
@@ -207,9 +201,9 @@
       <header>Variables Globales</header>
       <article>
         <p>
-          Las variables globales son, de hecho, propiedades del objeto global. en web
-          páginas el objeto global es la ventana, por lo que puede configurar y acceder global
-          variables utilizando la sintaxis window.variable. 
+          Las variables globales son, de hecho, propiedades del objeto global. en las
+          páginas web el objeto global es la ventana, por lo que puede configurar y acceder a las 
+          variables globales utilizando la sintaxis window.variable. 
         </p>
   
         <p>
@@ -312,6 +306,10 @@
         <code
           >if (condition_1) { statement_1; } else if (condition_2) { statement_2;
           } else if (condition_n) { statement_n; } else { statement_last; }
+
+          También se puede hacer de esta otra manera:
+          número=1;
+          resultado = número === 1 ? "Sí soy un uno": "No, no soy un uno";
         </code>
         En el caso de condiciones múltiples, sólo la primera condición lógica que
          se evalúa como verdadero se ejecutará. Para ejecutar varias sentencias, agrupe
@@ -341,6 +339,49 @@
         se evalúa como verdadero. Una instrucción while tiene el siguiente aspecto: 
   
         <code>while (condition) statement</code> Si la condición se vuelve falsa,
+        sentencia dentro del ciclo deja de ejecutarse y el control pasa al
+        instrucción que sigue al bucle. 
+  
+        <p>
+          La prueba de condición ocurre antes de que se ejecute la declaración en el bucle. Si
+          la condición devuelve verdadero, la declaración se ejecuta y la condición es
+          probado de nuevo. Si la condición devuelve falso, la ejecución se detiene y
+          el control se pasa a la sentencia que sigue a while. 
+        </p>
+  
+        <p>
+          Para ejecutar varias sentencias, use una sentencia de bloque ({ ... }) para agrupar
+          esas declaraciones. 
+        </p>
+  
+        Ejemplo:
+  
+        <p>El siguiente bucle while itera siempre que n sea menor que tres: </p>
+  
+        <code>var n = 0; var x = 0; while (n &lt; 3) { n++; x += n; }</code>
+        <p>
+          Con cada iteración, el ciclo incrementa n y agrega ese valor a x.
+          Por lo tanto, x y n toman los siguientes valores: 
+        </p>
+  
+        <ul>
+          <li>Después del primer pase:  n = 1 and x = 1</li>
+          <li>Después del segundo pase: n = 2 and x = 3</li>
+          <li>Después del tercer pase: n = 3 and x = 6</li>
+        </ul>
+        <p>
+          Después de completar el tercer paso, la condición n &lt; 3 ya no es
+          verdadero, por lo que el ciclo termina. 
+        </p>
+      </article>
+    </section>
+    <section class="main-section" id="Declaración_switch">
+      <header>Declaración switch ... case... default</header>
+      <article>
+        Una sentencia while ejecuta sus sentencias siempre que se cumpla una condición específica
+        se evalúa como verdadero. Una instrucción while tiene el siguiente aspecto: 
+  
+        <code>switch (condition) statement</code> Si la condición se vuelve falsa,
         sentencia dentro del ciclo deja de ejecutarse y el control pasa al
         instrucción que sigue al bucle. 
   
@@ -430,4 +471,6 @@
       </article>
     </section>
   </main>
-  
+    
+</body>
+</html>

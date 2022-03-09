@@ -33,12 +33,17 @@
       <li><a class="nav-link" href="#Padding">Padding</a></li>
       <li><a class="nav-link" href="#Borders">Borders</a></li>
       <li><a class="nav-link" href="#AuVid">Integració audio, video barra de progrès</a></li>
-      <li><a class="nav-link" href="#Form">Formularis en html</a></li>
+      <li><a class="nav-link" href="#Form">Formularios en html</a></li>
   </nav>
   <main id="main-doc">
     <section class="main-section" id="Introducción">
       <h1>HTML Documentación  </h1>
-      <img src="Imatges/html.png" alt="HTML logo">
+      <figure>
+        <img 
+          src="Imatges/html.png" 
+          alt="HTML logo">
+      </figure>
+      
       <hr/>
       <header>Introducción</header>
       <article>
@@ -73,7 +78,8 @@
     <section class="main-section" id="Instruccions_bàsiques">
       <header>Instruccions bàsiques: salt de linea, Paràgraf, tituls i Enfasis...</header>
       <article>
-            El salt de linea es fa amb  <xmp><br></xmp>     
+            El salt de linea es fa amb  <xmp><br></xmp>
+            Els comentaris amb <xmp><!-- i --></xmp>     
 			      El que es vol ficar com a Paràgraf amb  <xmp> <p> </p>.</xmp> Els següents cassos igual canviant la p per les altres instruccions.<br>
 			      Exemple de small <small>small</small> <br> 
 			      Exemple de em<em> cursiva em</em> <br> 
@@ -240,7 +246,7 @@
         <h3>Exemple de reproducció de audio de mp3:</h3><br>
         <audio align=center src="Sons/prova1mp3.mp3" controls> Element audio no soportat per el seu navegador</audio><br>
         <h3>Exemple de reproducció de video mp4:</h3><br>
-        <video class="center" controls loops height=300px midth=200px>
+        <video controls preload="auto" loops height=300px midth=200px>
         <source src="Videos/samplevideo_1280x720_1mb.mp4" > Element de video no soportat al seu navegador
         </video> <br>
 
@@ -285,13 +291,42 @@
     </section>
 
     <hr/>
-    <h3 align=center> <u> <a name="Form">Formularis en html</a></u></h3>	
+    <h3 align=center> <u> <a name="Form">Formularios en html</a></u></h3>
+    <article>
+      <p>Los formularios web son uno de los principales puntos de interacción entre un usuario
+         y un sitio web o aplicación. Los formularios permiten a los usuarios la introducción
+          de datos, que generalmente se envían a un servidor web para su procesamiento y 
+          almacenamiento (consulta Enviar los datos de un formulario más adelante en el módulo)
+          , o se usan en el lado del cliente para provocar de alguna manera una actualización
+           inmediata de la interfaz (por ejemplo, se añade otro elemento a una lista, o se 
+           muestra u oculta una función de interfaz de usuario).</p>
+      <p>El HTML de un formulario web está compuesto por uno o más controles de formulario (a veces 
+        llamados widgets), además de algunos elementos adicionales que ayudan a estructurar el 
+        formulario general; a menudo se los conoce como formularios HTML. Los controles pueden ser 
+        campos de texto de una o varias líneas, cajas desplegables, botones, casillas de verificación 
+        o botones de opción, y se crean principalmente con el elemento <xmp><input></xmp>, aunque hay algunos 
+        otros elementos que también hay que conocer.</p>
+      <p>Los controles de formulario también se pueden programar para forzar la introducción de 
+        formatos o valores específicos (validación de formulario), y se combinan con etiquetas de 
+        texto que describen su propósito para los usuarios con y sin discapacidad visual.</p>
+        <p> La estructura básica seria:
+          <xmp>
+            <form action="">
+              <label for="nombre">
+                <input type="text" id="nombre"/>
+              </label>
+            </form>
+          </xmp>
+        </p>
+    </article>	
 
-    <p> Esta explicat aqui:</p>
+    <p> Explicación más extensa aqui:</p>
 
-    <a href="https://developer.mozilla.org/es/docs/Learn/Forms/Your_first_form"> Formularis amb html</a>
-    <br> 
-      <script src="scripts/main.js"></script> <br>
+    <a href="https://developer.mozilla.org/es/docs/Learn/Forms/Your_first_form"> 
+      Formularios con html<br><br></a>
+
+    <a href="https://www.w3schools.com/html/html_form_input_types.asp">
+      Here are the different input types you can use in HTML.</a>
       <hr/>
     </body>
     </html>
